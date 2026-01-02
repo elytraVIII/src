@@ -1,4 +1,4 @@
 #!/bin/sh
 slstatus &
-feh --bg-scale /usr/share/backgrounds/nordic-wallpapers/ign_unsplash2.png &
+feh --bg-scale ~/src/wall/wall.jpg &
 exec dwm
