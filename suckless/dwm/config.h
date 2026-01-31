@@ -75,15 +75,14 @@ static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "@DEFAULT_
 static const Key keys[] = {
 	/* modifier                     key             function        argument */
 	/* modifier                     key             function        argument */
-        { ControlMask,                  XK_period,      spawn,          {.v = upvol } },
-        { ControlMask,                  XK_comma,       spawn,          {.v = downvol } },
-	{ MODKEY,                       XK_d,           spawn,          {.v = dmenucmd } },
-	{ MODKEY|ShiftMask,             XK_d,           spawn,          {.v = dmenudesktopcmd } },
-	{ MODKEY,                       XK_Return,      spawn,          {.v = termcmd } },
-	{ MODKEY,                       XK_w,           spawn,          {.v = browsercmd } },
-	{ MODKEY|ShiftMask,             XK_x,           spawn,          {.v = powercmd } },
-	{ MODKEY,                       XK_b,           togglebar,      {0} },
-	{ MODKEY,                       XK_j,           focusstack,     {.i = +1 } },
+        	{ ControlMask,                  XK_period,      spawn,          {.v = upvol } },
+                { ControlMask,                  XK_comma,       spawn,          {.v = downvol } },
+        	{ MODKEY,                       XK_p,           spawn,          {.v = dmenucmd } },
+        	{ MODKEY|ShiftMask,             XK_d,           spawn,          {.v = dmenudesktopcmd } },
+        	{ MODKEY|ShiftMask,             XK_Return,      spawn,          {.v = termcmd } },
+        	{ MODKEY,                       XK_w,           spawn,          {.v = browsercmd } },
+        	{ MODKEY|ShiftMask,             XK_x,           spawn,          {.v = powercmd } },
+        	{ MODKEY,                       XK_b,           togglebar,      {0} },	{ MODKEY,                       XK_j,           focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,           focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,           incnmaster,     {.i = +1 } },
 	{ MODKEY,                       XK_d,           incnmaster,     {.i = -1 } },

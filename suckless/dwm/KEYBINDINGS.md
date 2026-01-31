@@ -4,10 +4,13 @@ The modifier key (`MODKEY`) is set to **Mod4** (usually the Super/Windows key).
 
 | Keybinding | Function |
 |------------|----------|
-| `MODKEY + Return` | Spawn terminal (`st`) / Zoom |
-| `MODKEY + d` | Spawn `dmenu` / Decrease nmaster |
+| `MODKEY + Shift + Return` | Spawn terminal (`st`) |
+| `MODKEY + Return` | Zoom / Promote to master |
+| `MODKEY + p` | Spawn `dmenu` |
+| `MODKEY + d` | Decrease nmaster |
 | `MODKEY + Shift + d` | Spawn `dmenu_run_desktop` |
 | `MODKEY + w` | Spawn browser (`zen-browser`) |
+| `MODKEY + Shift + x` | Spawn power menu (`powermenu`) |
 | `MODKEY + b` | Toggle status bar |
 | `MODKEY + j` | Focus next window in stack |
 | `MODKEY + k` | Focus previous window in stack |
