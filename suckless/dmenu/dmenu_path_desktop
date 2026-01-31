@@ -11,7 +11,7 @@ for dir in "${XDG_DATA_DIRS:-"/usr/local/share:/usr/share"}"; do
 	dirs="${dirs}:${dir}/applications"
 done;
 
-if stest -dqr -n "$cache" $PATH; then
+if ! [ -f "$cache" ] || stest -dqr -n "$cache" $dirs; then
 	stest -fl $dirs | grep -v 'mimeinfo.cache' | sed 's/\.[^./]*$//' | sort -u | tee "$cache"
 else
 	cat "$cache"
